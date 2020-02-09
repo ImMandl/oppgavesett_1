@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oppgavesett 1</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/register.css">
+
+</head>
+
+<body>
+
+    <h1>Oppgavesett 1</h1>
+
+    <div id="add">
+        <p>Legg til møbel</p>
+        <form class="add-grid" id="addSubmit">
+            <input type="text" id="inpNavn3" placeholder="Navn på møbel">
+            <input type="text" id="inpType3" placeholder="Type møbel">
+            <input type="number" id="inpPris3" placeholder="Pris">
+            <input type="number" id="inpRabatt3" placeholder="Rabatt">
+            <button>Register møbel</button>
+        </form>
+    </div>
+
+    <!-- viser databsen på siden -->
+    <div id="register"></div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script> <!-- Cloud Firestore -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAUzS_S7oZZx35ay1lUicz5B4YFEeU0YK8",
+            authDomain: "first-firestore-8b4b3.firebaseapp.com",
+            databaseURL: "https://first-firestore-8b4b3.firebaseio.com",
+            projectId: "first-firestore-8b4b3",
+            storageBucket: "first-firestore-8b4b3.appspot.com",
+            messagingSenderId: "652689896504",
+            appId: "1:652689896504:web:452c74b673fa35af0322cd"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Javascript -->
+    <script src="./js/register.js"></script>
+    <script src="./js/oppgave3.js"></script>
+</body>
+
+</html>
